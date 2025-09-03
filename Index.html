@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Superbikes List</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #1f1f1f;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      color: #ff3c00;
+    }
+
+    .bike-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+
+    .bike {
+      background-color: #2b2b2b;
+      border-radius: 10px;
+      padding: 20px;
+      transition: transform 0.2s ease;
+    }
+
+    .bike:hover {
+      transform: scale(1.03);
+    }
+
+    .bike img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .bike h2 {
+      color: #ff8800;
+    }
+
+    .bike p {
+      font-size: 0.9em;
+      color: #cccccc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Top Superbikes of the World</h1>
+  </header>
+
+  <div class="bike-list">
+    <div class="bike">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Kawasaki_Ninja_H2R.jpg" alt="Kawasaki Ninja H2R">
+      <h2>Kawasaki Ninja H2R</h2>
+      <p>310 hp, track-only hyperbike with a supercharged engine. One of the fastest superbikes ever made.</p>
+    </div>
+
+    <div class="bike">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Ducati_Panigale_V4.jpg" alt="Ducati Panigale V4">
+      <h2>Ducati Panigale V4</h2>
+      <p>Italian performance and design with a V4 engine. Sleek, aggressive, and powerful.</p>
+    </div>
+
+    <div class="bike">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/BMW_S1000RR.jpg" alt="BMW S1000RR">
+      <h2>BMW S1000RR</h2>
+      <p>Precision German engineering, cutting-edge electronics, and race-bred performance.</p>
+    </div>
+
+    <div class="bike">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Aprilia_RSV4_RF.jpg" alt="Aprilia RSV4 RF">
+      <h2>Aprilia RSV4 RF</h2>
+      <p>A racing machine born on the track, with advanced aerodynamics and a screaming V4 engine.</p>
+    </div>
+  </div>
+</body>
+</html>
